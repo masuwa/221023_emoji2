@@ -38,8 +38,7 @@ class RectangleCollider extends Collider {
   }
   
   
-  // 位置の平行移動。
-  // ローカル空間からグローバル空間への変換に使う。
+
   translate(dx, dy) {
     return new RectangleCollider(this.x + dx, this.y + dy, this.width, this.height);
   }
